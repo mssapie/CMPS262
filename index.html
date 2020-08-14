@@ -1,40 +1,86 @@
 <html>
   <title>MyFirstApp</title>
 
-  <script> src="jquery-3.2.1.min.js"</script>
+   <script> src="jquery-3.2.1.min.js"</script>
 
-  <head>
-    <style>
-    .myDiv {
-  border: 5px outset red;
-  background-color: lightblue;
-  text-align: left;
-}
-</style>
+    <head>
 
-<body>
-  <div data-role="navBar">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("div").animate({left: '340px'});
+          });
+        });
+      </script>
+
+      <style>
+      /*navBar {
+        list-style: none;
+        font-weight: bold;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+      }
+
+      navBar li {
+        margin: 0px;
+        display:
+      }
+      navBar li a {
+        padding: 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: green;
+        background-color: black;
+        float: left
+      }*/
+
+        ul {
+          color: black;
+        }
+        h1 {
+          color: navy;
+        }
+        body {
+          background-color: green;
+        }
+
+        .aboutSection {
+          width: 850px;
+          height:250px;
+          border: 5px outset red;
+          background-color: lightblue;
+          text-align: left;
+        }
+      </style>
+
+    </head>
+
+        <body>
+          <div data-role="navBar">
         <ul>
           <li><a href="index.html" class="ui-button-active">Home</a></li>
           <li><a href="photos.html">Photos</a></li>
           <li><a href="classes.html">Classes</a></li>
           <li><a href="interests.html">Interests</a></li>
       </div> <!--navbar-->
-<h1> Welcome to my Website! </h1>
-  <div class="myDiv">
-    <h2> About Me: </h2>
-    <p>
-      Hello, I'm Mike Sapienza. I am in my 3rd year at Point Park. I graduated in 2017 from Central Catholic High School in Pittsburgh.
-    </p>
+      <h1> Welcome to my Website! </h1>
+      <div class="aboutSection">
+        <h2> About Me: </h2>
+        <p>Hello, I'm Mike Sapienza. I am in my 3rd year at Point Park. I graduated in 2017 from Central Catholic High School in Pittsburgh.</p>
 
-   <h>Contact info: </h>
-
-     <ul>
-  <li> School Email: mssapie@pointpark.edu </li>
-  <li> Personal Email: sapienzamike@gmail.com </li>
-  <li> Phone:(412)-287-1318 </li>
-</ul>
+        <div style= "padding-left: 3px;">
+          <button style="Background: salmon;">Contact Info</button>
+          <div style="background:lightblue;height:80px;width:500px;position:absolute;"></div>
+        </div>
+        <ul>
+          <li> School Email: mssapie@pointpark.edu </li>
+          <li> Personal Email: sapienzamike@gmail.com </li>
+          <li> Phone:(412)-287-1318 </li>
+        </ul>
     </div>
+
   </body>
-  </head>
+
 </html>
