@@ -15,26 +15,30 @@
       </script>
 
       <style>
-      /*navBar {
-        list-style: none;
-        font-weight: bold;
-        margin-bottom: 10px;
+      body {
+        margin: 0
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .navBar {
+        overflow: hidden;
+        background-color: #333;
         width: 100%;
+      }
+      .navBar a {
+        display: flex;
+        justify-content: space-around;
+        float: left;
+        color: #f2f2f2;
+        position: relative;
+        width: 20%;
         text-align: center;
-      }
-
-      navBar li {
-        margin: 0px;
-        display:
-      }
-      navBar li a {
-        padding: 10px;
+        font-family: fantasy;
+        color: red;
+        padding: 16px;
         text-decoration: none;
-        font-weight: bold;
-        color: green;
-        background-color: black;
-        float: left
-      }*/
+        font-size: 20px;
+
+      }
 
         ul {
           color: black;
@@ -58,13 +62,12 @@
     </head>
 
         <body>
-          <div data-role="navBar">
-        <ul>
-          <li><a href="index.html" class="ui-button-active">Home</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="interests.html">Interests</a></li>
-      </div> <!--navbar-->
+          <div class ="navBar">
+            <a class="active" href="index.html">Home</a>
+            <a href="interests.html">Interests</a>
+            <a href="photos.html">Photos</a>
+            <a href="classes.html"> Classes</a>
+          </div>
       <h1> Welcome to my Website! </h1>
       <div class="aboutSection">
         <h2> About Me: </h2>

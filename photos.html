@@ -2,6 +2,30 @@
 <head>
   <style>
   body {
+    margin: 0
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .navBar {
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+  }
+  .navBar a {
+    display: flex;
+    justify-content: space-around;
+    float: left;
+    color: #f2f2f2;
+    position: relative;
+    width: 20%;
+    text-align: center;
+    font-family: fantasy;
+    color: red;
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+
+  }
+  body {
     background-color: green;
   }
   h1 {
@@ -10,13 +34,13 @@
   </style>
 </head>
 <body>
-  <div data-role="navBar">
-        <ul>
-          <li><a href="index.html" class="ui-button-active">Home</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="interests.html">Interests</a></li>
-      </div> <!--navbar-->
+  <body>
+    <div class ="navBar">
+      <a class="active" href="index.html">Home</a>
+      <a href="interests.html">Interests</a>
+      <a href="photos.html">Photos</a>
+      <a href="classes.html"> Classes</a>
+    </div>
       <h1> My Photos </h1>
 <img src="Photos/senior_photo_cchs.jpg" width="500px" height="600px" class= "center" alt="Senior Photo from High School">
 </body>

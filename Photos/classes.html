@@ -1,35 +1,69 @@
 <html>
 
-<script src="jquery-3.2.1.min.js"></script>
+  <script src="jquery-3.2.1.min.js"></script>
 
-<head>
-  <style>
-  .myDiv {
-border: 5px outset green;
-background-color: coral;
-text-align: left;
-}
-</style>
+  <head>
+    <style>
+    body {
+      margin: 0
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navBar {
+      overflow: hidden;
+      background-color: #333;
+      width: 100%;
+    }
+    .navBar a {
+      display: flex;
+      justify-content: space-around;
+      float: left;
+      color: #f2f2f2;
+      position: relative;
+      width: 20%;
+      text-align: center;
+      font-family: fantasy;
+      color: red;
+      padding: 16px;
+      text-decoration: none;
+      font-size: 20px;
+
+    }
+
+    ul {
+      color: black;
+    }
+    h1 {
+      color: navy;
+    }
+    body {
+      background-color: green;
+    }
+  .classesFall {
+    border: 5px outset blue;
+    background-color: coral;
+    text-align: left;
+  }
+  </style>
 </head>
-<body>
-  <div data-role="navBar">
-        <ul>
-          <li><a href="index.html" class="ui-button-active">Home</a></li>
-          <li><a href="photos.html">Photos</a></li>
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="interests.html">Interests</a></li>
-      </div> <!--navbar-->
-      <div class="myDiv">
-      <h1> Courses in the Fall: </h1>
-     <p>
-       <ul>
-       <li> ACCT 230: Accounting Info Systems </li>
-       <li> CMPS 214: Microcomputing </li>
-       <li> CMPS 300: Info Tech for Managers </li>
-       <li> CMPS 363: Digital Security </li>
-       <li> ENGL 251: World Lit: Novels </li>
-       </ul>
-     </p>
-     </div>
-</body>
+  <body>
+    <body>
+      <div class ="navBar">
+        <a class="active" href="index.html">Home</a>
+        <a href="interests.html">Interests</a>
+        <a href="photos.html">Photos</a>
+        <a href="classes.html"> Classes</a>
+      </div>
+        <div class="classesFall">
+          <h1> Courses in the Fall: </h1>
+          <p>
+            <ul>
+              <li> ACCT 230: Accounting Info Systems </li>
+              <li> CMPS 214: Microcomputing </li>
+              <li> CMPS 300: Info Tech for Managers </li>
+              <li> CMPS 363: Digital Security </li>
+              <li> ENGL 251: World Lit: Novels </li>
+            </ul>
+          </p>
+        </div>
+      </body>
 </html>
