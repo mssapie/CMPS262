@@ -1,18 +1,10 @@
 <html>
   <title>MyFirstApp</title>
-
    <script> src="jquery-3.2.1.min.js"</script>
+   <script> src="getAPIList.js"</script>
+   <script> src="get API info.js"</script>
 
     <head>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-      <script>
-      $(document).ready(function(){
-        $("button").click(function(){
-          $("div").animate({left: '340px'});
-          });
-        });
-      </script>
 
       <style>
       body {
@@ -68,21 +60,28 @@
             <a href="photos.html">Photos</a>
             <a href="classes.html"> Classes</a>
           </div>
-      <h1> Welcome to my Website! </h1>
+      <h1><marquee width="600px"; behavior="alternate">Welcome to my Website!</marquee></h1>
       <div class="aboutSection">
         <h2> About Me: </h2>
         <p>Hello, I'm Mike Sapienza. I am in my 3rd year at Point Park. I graduated in 2017 from Central Catholic High School in Pittsburgh.</p>
 
-        <div style= "padding-left: 3px;">
-          <button style="Background: salmon; font-weight: bold;">Contact Info</button>
-          <div style="background:lightblue;height:80px;width:500px;position:absolute;"></div>
-        </div>
+        <h3= padding-left: 3px;>
+        <h3>Contact Info</h3>
+
+
         <ul>
           <li> School Email: mssapie@pointpark.edu </li>
           <li> Personal Email: sapienzamike@gmail.com </li>
           <li> Phone:(412)-287-1318 </li>
         </ul>
     </div>
+    <div>
+      Search on News Articles:</br>
+      <input type="text" name="news"></br>
+      <button type="button">Search</button>
+    </div>
+
+
 
   </body>
 

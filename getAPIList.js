@@ -1,3 +1,11 @@
+var apikey='ocmYAnlVxm3QWnQoHJtBwtUdiu90MlAn'
+var urlbase='https://api.nytimes.com/svc/search/v2/articlesearch.json?'
+var keyword = 'Value from textbox that the user inputs in here'
+var query = '?q='
+var apikeyidentity = 'api-key='
+
+// var url = urlbase + query + keyword + apikeyidentity + apikey;
+
 var url = 'https://api.nytimes.com/svc/search/v2/articlesearch.json?q=covid-19&api-key=ocmYAnlVxm3QWnQoHJtBwtUdiu90MlAn'
 
 function setup() {
