@@ -1,6 +1,5 @@
 <html>
   <title>About Me</title>
-   <script> src="jquery-3.2.1.min.js"</script>
    <script> src="getAPIList.js"</script>
    <script> src="get API info.js"</script>
 
@@ -76,10 +75,57 @@
         </ul>
     </div>
     <div>
-      Search on News Articles:</br>
-      <input type="text" name="news"></br>
-      <button type="button">Search</button>
-    </div>
+    <h1>NY Times API</h1>
+    <p>Search for any Article on NY Times!<p>
+    <input type="text" value="search" id="search">
+    <input type="button" value="search" id="searchButton">
+    <div class="buttonOptions">
+      <input type="button" id="pToken" value="Previous">
+      <input type="button" id="nToken" value="Next">
+  </div>
+    <div id="output"></div>
+    <script src="Jquery_3.3.1.min.js"></script>
+
+    <script>
+      var pageToken = {};
+      $(document).ready(function(){
+        $('#searchButton').click(function(){
+          searchNYT();
+      })
+    })
+
+      function searchNYT(){
+          $.ajax({
+          url: 'https://api.nytimes.com/svc/search/v2/articlesearch',
+          dataType:'json',
+          type:'GET',
+          data:{
+            key:'ocmYAnlVxm3QWnQoHJtBwtUdiu90MlAn',
+            q:$('#search').val(),
+            part:'snippet',
+            maxResults:50,
+            pageToken: pageToken.current
+          }
+      }).done(function(data){
+
+        pageToken.nextPage = data.nextPageToken;
+        pagetoken.prevPage = data.prevPageToken;
+        console.log(pageToken);
+
+        var html="";
+        $.each(data['items'], function(index,value){
+          html += '<div><div class="title">'+value.snippet.title+'</div>';
+          html += '<div><div class="url">'+value.id.articleId+'</div>';
+          html += '<div><img class="thumbnail" src="'+value.snippet.thumbnail.medium.url+'"></div>';
+          html += '</div>';
+        })
+        $('#output').html(html);
+
+
+    })
+    }
+  </script>
+  </div>
 
 
 
