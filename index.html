@@ -92,6 +92,9 @@
         $('#searchButton').click(function(){
           searchNYT();
       })
+      $('.tokenClass').click(function(){
+        page.Token.current = $(this).val()== 'Next' ? pageToken.nextPage : pageToken.prevPage;
+        searchNYT();
     })
 
       function searchNYT(){
