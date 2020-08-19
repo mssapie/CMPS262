@@ -115,20 +115,11 @@
         pageToken.nextPage = data.nextPageToken;
         pagetoken.prevPage = data.prevPageToken;
         console.log(pageToken);
-        app.use(function(req, res, next) {
-          res.header("Access-Control-Allow-Origin", "mssapie.it.pointpark.edu", "mssapie.github.io/CMPS262"); // update to match the domain you will make the request from
-          res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
-        next();
-        });
-
-        app.get('/', function(req, res, next) {
-        // Handle the get for this route
-        });
-
-        app.post('/', function(req, res, next) {
-       // Handle the post for this route
-        });
-
+        public void doGet(HttpServletRequest req, HttpServletResponse resp) {
+          resp.addHeader("Access-Control-Allow-Origin", "*");
+          resp.addHeader("Content-Type", "text/csv");
+          resp.getWriter().append(csvString);
+        }
         var html="";
         $.each(data['items'], function(index,value){
           html += '<div><div class="title">'+value.snippet.title+'</div>';
