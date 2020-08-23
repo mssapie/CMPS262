@@ -1,10 +1,89 @@
 <html>
   <head>
     <title>Portfolio</title>
-      <p>test</p>
+    <style>
+    .btn {
+  background-color: DodgerBlue;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+    body {
+      margin: 0
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .navBar {
+      overflow: hidden;
+      background-color: #333;
+      width: 100%;
+    }
+    .navBar a {
+      display: flex;
+      justify-content: space-around;
+      float: left;
+      color: #f2f2f2;
+      position: relative;
+      width: 15%;
+      text-align: center;
+      font-family: fantasy;
+      color: red;
+      padding: 16px;
+      text-decoration: none;
+      font-size: 20px;
+
+    }
+
+      ul {
+        color: white;
+      }
+      h3 {
+        color: navy;
+      }
+      body {
+        background-color: teal;
+
+      }
+      </style>
+
   </head>
 
   <body>
+
+    <div class ="navBar">
+      <a class="active" href="index.html">Home</a>
+      <a href="interests.html">Interests</a>
+      <a href="photos.html">Photos</a>
+      <a href="classes.html"> Classes</a>
+      <a href="portfolio.html"> My Portfolio</a>
+    </div>
+
+    <div>
+    <img src="Photos/senior_photo_cchs.jpg" width="500px" height="500px" class= "center" alt="Senior Photo from High School">
+  </div>
+
+
+
+    <h3>Contact Info</h3>
+
+
+    <ul>
+      <li> School Email: mssapie@pointpark.edu </li>
+      <li> Personal Email: sapienzamike@gmail.com </li>
+      <li> Phone:(412)-287-1318 </li>
+    </ul>
+
+    <div>
+      <form method="get" action="My Resume.docx">
+      <button class="btn"><i class="fa fa-download"></i> My Resume</button>
+      </form>
+    </div>
+
 
   </body>
 
